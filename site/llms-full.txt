@@ -1,0 +1,27 @@
+# How many acoustic panels do i need
+
+> Explore how much additional absorption a Sabine room model predicts from a measured reverberation time and a target time. It estimates room treatment, not sound isolation between rooms.
+
+## Calculator
+- [Open the calculator](https://howmanyacousticpanelsdoineed.com/): A 50 m³ room changing from 1.2 s to 0.6 s needs about 6.71 m² of additional absorption in this model: 13 panels providing 0.54 m² each.
+
+## Method
+In SI units, Sabine’s relation is T = 0.161 × V ÷ A. Use measured current time to infer current absorption, and target time to calculate target absorption. Additional absorption is the positive difference. Divide by panel area multiplied by the difference between panel and replaced-surface absorption fractions, then round up.
+
+## Limits
+Use values from the same frequency band and a manufacturer’s appropriate absorption data. A single NRC number is not a complete frequency response. Sabine assumes an approximately diffuse field and is only an estimate for small or unevenly treated rooms. Mounting, placement, furniture and low-frequency behavior need separate consideration. Example times are illustrative, not measurements of your room.
+
+## Supporting pages
+- [Method and assumptions](https://howmanyacousticpanelsdoineed.com/method/)
+- [About, editorial responsibility and privacy](https://howmanyacousticpanelsdoineed.com/about/)
+
+## Sources
+- [Sabine relation: reverberation-time background](https://en.wikipedia.org/wiki/Reverberation)
+- [NIST: SI units and measurement](https://www.nist.gov/pml/owm/metric-si/si-units)
+
+## Worked examples
+### Example 1
+A 50 m³ room changing from 1.2 s to 0.6 s needs about 6.71 m² of additional absorption in this model: 13 panels providing 0.54 m² each.
+
+### Example 2
+If the measured time is already 0.5 s and the target is 0.6 s, this model calls for no additional absorption.
