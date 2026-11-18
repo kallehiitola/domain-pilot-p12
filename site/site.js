@@ -9,7 +9,8 @@ const conversions={m:['ft',1/0.3048],cm:['in',1/2.54],m2:['ft²',1/0.09290304],m
 let currentSystem='metric';
 const canonical=new Map(topic.fields.filter(f=>f.type==='number').map(f=>[f.id,f.value]));
 const shown=new Map(topic.fields.filter(f=>f.type==='number').map(f=>[f.id,form.elements.namedItem(f.id).value]));
-const showNumber=v=>String(Number(v.toFixed(4)));
+// Display only: canonical values keep full precision while an input is unchanged.
+const showNumber=v=>String(Math.abs(v)>=1?Number(v.toFixed(2)):Number(v.toPrecision(3)));
 function converted(unit,mode){return mode==='imperial'&&conversions[unit]?conversions[unit]:[unit,1];}
 function values(){return Object.fromEntries(topic.fields.map(f=>{
  const input=form.elements.namedItem(f.id);

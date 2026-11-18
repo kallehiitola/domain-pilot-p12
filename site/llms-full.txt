@@ -1,4 +1,4 @@
-# How many acoustic panels do i need
+# How many acoustic panels do I need?
 
 > Explore how much additional absorption a Sabine room model predicts from a measured reverberation time and a target time. It estimates room treatment, not sound isolation between rooms.
 
@@ -6,7 +6,7 @@
 - [Open the calculator](https://howmanyacousticpanelsdoineed.com/): A 50 m³ room changing from 1.2 s to 0.6 s needs about 6.71 m² of additional absorption in this model: 13 panels providing 0.54 m² each.
 
 ## Guide
-- [How to how many acoustic panels do i need](https://howmanyacousticpanelsdoineed.com/guide/): measurement inputs, formula, assumptions, limits and a worked example.
+- [How to work out how many acoustic panels you need](https://howmanyacousticpanelsdoineed.com/guide/): step-by-step measuring, common mistakes, formula, limits and a worked example.
 
 ## Method
 In SI units, Sabine’s relation is T = 0.161 × V ÷ A. Use measured current time to infer current absorption, and target time to calculate target absorption. Additional absorption is the positive difference. Divide by panel area multiplied by the difference between panel and replaced-surface absorption fractions, then round up.
@@ -21,6 +21,17 @@ Use values from the same frequency band and a manufacturer’s appropriate absor
 ## Sources
 - [Sabine relation: reverberation-time background](https://en.wikipedia.org/wiki/Reverberation)
 - [NIST: SI units and measurement](https://www.nist.gov/pml/owm/metric-si/si-units)
+
+## Step by step
+1. Measure the room length, width and height.
+2. Measure the current reverberation time (RT60), for example with a sound-measurement app and a sharp clap.
+3. Choose a target reverberation time for how the room is used.
+4. Read each panel's size and absorption coefficient from the product data.
+
+## Common mistakes
+- Treating acoustic panels as soundproofing. They reduce echo inside the room, not noise passing through walls.
+- Relying on one absorption figure for every pitch. Thin panels absorb little bass.
+- Putting every panel on one wall. Spread them out and start with the points where sound first reflects towards the listener.
 
 ## Worked examples
 ### Example 1
