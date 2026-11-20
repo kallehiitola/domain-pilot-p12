@@ -1,23 +1,26 @@
 # How many acoustic panels do I need?
 
-> Explore how much additional absorption a Sabine room model predicts from a measured reverberation time and a target time. It estimates room treatment, not sound isolation between rooms.
+> Estimate acoustic panel count using either wall-coverage percentage (when room reverberation time is unmeasured) or the Sabine RT60 room-absorption model.
 
 ## Calculator
-- [Open the calculator](https://howmanyacousticpanelsdoineed.com/): A 50 m³ room changing from 1.2 s to 0.6 s needs about 6.71 m² of additional absorption in this model: 13 panels providing 0.54 m² each.
+- [Open the calculator](https://howmanyacousticpanelsdoineed.com/): US room coverage: a 16 × 12 × 8 ft room (448 sq ft walls) at 20% coverage needs 89.6 sq ft, or 12 standard 4 × 2 ft panels. Metric coverage: a 5 × 4 × 2.5 m room (45 m² wall area) at 20% moderate coverage needs 9.0 m² of treatment, or 13 panels of 1.2 × 0.6 m.
 
 ## Guide
-- [How to work out how many acoustic panels you need](https://howmanyacousticpanelsdoineed.com/guide/): step-by-step measuring, common mistakes, formula, limits and a worked example.
+- [How to work out how many acoustic panels you need](https://howmanyacousticpanelsdoineed.com/guide/): step-by-step measuring, common mistakes, and ordering checklist.
 
-## Method
-In SI units, Sabine’s relation is T = 0.161 × V ÷ A. Use measured current time to infer current absorption, and target time to calculate target absorption. Additional absorption is the positive difference. Divide by panel area multiplied by the difference between panel and replaced-surface absorption fractions, then round up.
+## Formula and method
+Coverage mode: Panels = ceiling((2 × (L + W) × H × coverage% / 100) / (panel W × panel H)). Sabine mode: ΔA = 0.161 × V × (1 / T_target − 1 / T_current); Panels = ceiling(ΔA / (panel area × (α_panel − α_surface))).
+
+In Coverage % mode, calculate total wall surface area, apply your target coverage percentage (10%–15% light, 15%–25% moderate, 25%–40% heavy), and divide by single-panel area. In Sabine RT60 mode, infer current and target absorption from room volume and measured reverberation time using T = 0.161 × V / A, then divide required added absorption by net absorption per panel.
 
 ## Limits
-Use values from the same frequency band and a manufacturer’s appropriate absorption data. A single NRC number is not a complete frequency response. Sabine assumes an approximately diffuse field and is only an estimate for small or unevenly treated rooms. Mounting, placement, furniture and low-frequency behavior need separate consideration. Example times are illustrative, not measurements of your room.
+Acoustic panels reduce echo and reverberation inside the room—they do not soundproof walls between rooms. A single NRC number hides weak low-frequency absorption on thin panels. Sabine assumes a diffuse sound field; room modes, bass traps, furniture, and first-reflection placement require separate attention.
 
 ## Supporting pages
 - [Method and assumptions](https://howmanyacousticpanelsdoineed.com/method/)
 - [About, editorial responsibility and privacy](https://howmanyacousticpanelsdoineed.com/about/)
 
 ## Sources
-- [Sabine relation: reverberation-time background](https://en.wikipedia.org/wiki/Reverberation)
-- [NIST: SI units and measurement](https://www.nist.gov/pml/owm/metric-si/si-units)
+- [Wikipedia: Reverberation and the Sabine equation](https://en.wikipedia.org/wiki/Reverberation)
+- [Wikipedia: Noise Reduction Coefficient (NRC)](https://en.wikipedia.org/wiki/Noise_reduction_coefficient)
+- [Engineering ToolBox: Sound absorption coefficients](https://www.engineeringtoolbox.com/accoustic-sound-absorption-d_68.html)
